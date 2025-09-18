@@ -9,6 +9,7 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 
 # Download required nltk data
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -77,4 +78,5 @@ elif app_mode == "📰 Fake News Detector":
                 st.error("🔴 The News is Fake!")
         else:
             st.warning("⚠️ Please enter some text to Analyze.")
+
 
