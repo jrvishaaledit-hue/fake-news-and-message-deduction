@@ -11,7 +11,7 @@ from nltk.stem import PorterStemmer
 # Download required nltk data
 nltk.download('stopwords')
 nltk.download('punkt')
-
+nltk.download('wordnet')
 # Initialize stemmer
 port_stemmer = PorterStemmer()
 
@@ -77,3 +77,4 @@ elif app_mode == "📰 Fake News Detector":
                 st.error("🔴 The News is Fake!")
         else:
             st.warning("⚠️ Please enter some text to Analyze.")
+
